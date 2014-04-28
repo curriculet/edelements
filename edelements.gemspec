@@ -6,10 +6,11 @@ require 'edelements/version'
 Gem::Specification.new do |spec|
   spec.name          = "edelements"
   spec.version       = Edelements::VERSION
+
   spec.authors       = ["Vitalya Shevtsov"]
   spec.email         = ["kaktusyaka@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.date          = "2014-04-28"
+  spec.description   = "Edelements wrap the Edelements API nicely"
   spec.homepage      = ""
   spec.license       = "MIT"
 
