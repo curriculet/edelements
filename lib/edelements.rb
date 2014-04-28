@@ -2,6 +2,7 @@ require 'json'
 require 'hashie/rash'
 require 'httparty'
 
+require 'edelements/configuration'
 require 'edelements/version'
 
 #Api operations
@@ -14,5 +15,5 @@ require 'edelements/api/students'
 require 'edelements/api/teachers'
 
 module Edelements
-  # Your code goes here...
+  extend Configuration
 end

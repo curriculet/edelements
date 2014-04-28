@@ -62,7 +62,7 @@ module Edelements
     #
     def configure
       yield self
-      @client = Edelements::API::Client.new( self )
+      #@client = Edelements::API::Client.new( self )
     end
 
     protected
