@@ -1,7 +1,7 @@
 module Edelements
   module Configuration
-    VALID_CONNECTION_KEYS = 's'#[:version, :user_agent, :testing, :timeout].freeze
-    VALID_OPTIONS_KEYS    = 's'#[:api_key].freeze
+    VALID_CONNECTION_KEYS = [:endpoint, :api_version, :user_agent, :testing, :timeout].freeze
+    VALID_OPTIONS_KEYS    = [:api_key].freeze
 
     #@!visibility private
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
