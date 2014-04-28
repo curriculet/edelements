@@ -1,6 +1,10 @@
-require "edelements/version"
+require 'json'
+require 'hashie/rash'
+require 'httparty'
 
-#API
+require 'edelements/version'
+
+#Api operations
 require 'edelements/api/courses'
 require 'edelements/api/events'
 require 'edelements/api/history'

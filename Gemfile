@@ -6,7 +6,6 @@ gemspec
 gem 'httparty', '~> 0.10'
 gem 'rash',     '~> 0.3'
 
-
 group :development, :test do
   gem 'rspec', '~> 2'
   gem 'webmock'
