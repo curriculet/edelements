@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kaktusyaka@gmail.com"]
   spec.date          = "2014-04-28"
   spec.description   = "Edelements wrap the Edelements API nicely"
+  spec.summary       = "Edelements wrap the Edelements API nicely"
   spec.homepage      = ""
   spec.license       = "MIT"
 
