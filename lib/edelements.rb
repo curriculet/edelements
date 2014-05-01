@@ -4,6 +4,8 @@ require 'httparty'
 
 require 'edelements/configuration'
 require 'edelements/version'
+require 'edelements/api/client'
+require 'edelements/errors'
 
 #Api operations
 require 'edelements/api/courses'

@@ -7,7 +7,7 @@ module Edelements
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
 
     DEFAULT_ENDPOINT      = 'http://johnson-test-1.edelements.com'
-    DEFAULT_API_VERSION   = 'v1.0'
+    DEFAULT_API_VERSION   = 'v1_0'
     DEFAULT_USER_AGENT    = 'Edelements API Ruby Gem by Curriculet'.freeze
     DEFAULT_TIMEOUT       = nil
     DEFAULT_TESTING       = false
@@ -52,7 +52,7 @@ module Edelements
     # @example
     #  Edelements.configure do |c|
     #    c.api_key    = <MY-API-KEY>
-    #    c.api_verion = 'v1.0'
+    #    c.api_verion = 'v1_0'
     #    c.endpoint   = 'http://johnson-test-1.edelements.com'
     #    c.timeout    = '10' #seconds
     #    c.testing    = true
@@ -62,7 +62,7 @@ module Edelements
     #
     def configure
       yield self
-      #@client = Edelements::API::Client.new( self )
+      @client = Edelements::API::Client.new( self )
     end
 
     protected

@@ -17,8 +17,8 @@ VCR.configure do |c|
   c.default_cassette_options = {
     #record:                      (ENV['TRAVIS'] ? :none : :once)
     #record:                      :new_episodes
-    #record:                      :all
-    record:                      :none
+    record:                      :all
+    #record:                      :none
   }
 
   #c.filter_sensitive_data("<EDMODO_API_KEY>") do
