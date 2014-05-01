@@ -1,6 +1,7 @@
 module Edelements
   module Api
-    module Teachers
+    class Teachers < Resource
+      api_model Edelements::Teacher
     end
   end
 end

@@ -7,7 +7,11 @@ require 'edelements/version'
 require 'edelements/api/client'
 require 'edelements/errors'
 
+require 'edelements/model'
+require 'edelements/teacher'
+
 #Api operations
+require 'edelements/api/resource'
 require 'edelements/api/courses'
 require 'edelements/api/events'
 require 'edelements/api/history'
