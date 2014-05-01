@@ -17,8 +17,8 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=286b90c2-90cd-4286-bb0f-21fd8e3043fe; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Wed, 30-Apr-2014 12:16:24
+      - JSESSIONID=d435a72a-0c08-4713-8cd1-8e88642a3715; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Wed, 30-Apr-2014 12:30:00
         GMT
       Pragma:
       - no-cache
@@ -33,13 +33,13 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Thu, 01 May 2014 12:16:24 GMT
+      - Thu, 01 May 2014 12:30:00 GMT
     body:
       encoding: US-ASCII
       string: ! '{"data":[{"organization":{"id":"b8eaf45c-cca9-11e3-97de-22000aa43193","nameField":"District
         of Columbia Public Schools","typeField":"District"}}],"total":1,"page":"1"}'
     http_version: 
-  recorded_at: Thu, 01 May 2014 12:16:24 GMT
+  recorded_at: Thu, 01 May 2014 12:30:00 GMT
 - request:
     method: get
     uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/404
@@ -57,15 +57,15 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=a3ce751e-f61f-403e-bea3-9aff6f6078d8; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Wed, 30-Apr-2014 12:16:24
+      - JSESSIONID=f1b3a711-2416-49e8-99f1-c0198a36721d; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Wed, 30-Apr-2014 12:30:01
         GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
       - '949'
       Date:
-      - Thu, 01 May 2014 12:16:24 GMT
+      - Thu, 01 May 2014 12:30:00 GMT
     body:
       encoding: US-ASCII
       string: ! '<html><head><title>Apache Tomcat/7.0.32 - Error report</title><style><!--H1
@@ -80,5 +80,5 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR
         size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
     http_version: 
-  recorded_at: Thu, 01 May 2014 12:16:24 GMT
+  recorded_at: Thu, 01 May 2014 12:30:01 GMT
 recorded_with: VCR 2.9.0

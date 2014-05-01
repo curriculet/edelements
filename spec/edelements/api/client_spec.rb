@@ -9,35 +9,41 @@ describe Edelements::API::Client do
 
   describe 'initialization' do
     describe 'via configure' do
-      it "should be initialized by config" do
-        set_testing_configuration
-        cli = Edelements.configure do |c |
-              c.api_key  = edelements_api_key
-              c.testing  = true
+      context "should be initialized by config" do
+        before do
+          set_testing_configuration
+          @cli = Edelements.configure do |c |
+                c.api_key  = edelements_api_key
+                c.testing  = true
+          end
+          @options_hash = @cli.class.default_options
         end
-        cli.should_not be nil?
-        options_hash = cli.class.default_options
-        options_hash[:base_uri].should == Edelements.api_url
-        options_hash[:default_params].should == nil
-        options_hash[:debug_output].should_not == nil
-        options_hash[:headers].should_not == nil
-        options_hash[:headers]['User-Agent'].should_not == nil
+
+        it { expect(@cli).to_not be_nil }
+        it { expect(@options_hash[:base_uri]).to eq Edelements.api_url }
+        it { expect(@options_hash[:default_params]).to be_nil }
+        it { expect(@options_hash[:debug_output]).to_not be_nil }
+        it { expect(@options_hash[:headers]).to_not be_nil }
+        it { expect(@options_hash[:headers]['User-Agent']).to_not be_nil }
       end
     end
 
-    it 'should be initialized via hash' do
-      configuration_hash = {
-          endpoint:    'https://example.com',
-          api_version: 'v52',
-          api_key:     'my_edmodo_api_key',
-          testing:      true
-      }
-      client = Edelements::API::Client.new( configuration_hash )
-      client.should_not be nil
-      options_hash = client.class.default_options
-      options_hash[:base_uri].should == 'https://example.com/v52'
-      options_hash[:default_params].should == nil
-      options_hash[:debug_output].should_not == nil
+    context 'should be initialized via hash' do
+      before do
+        configuration_hash = {
+            endpoint:    'https://example.com',
+            api_version: 'v52',
+            api_key:     'my_edmodo_api_key',
+            testing:      true
+        }
+        @options_hash = client.class.default_options
+        @client = Edelements::API::Client.new( configuration_hash )
+      end
+
+      it{ expect(@client).to_not be_nil }
+      it{ expect(@options_hash[:base_uri]).to eq 'https://example.com/v52' }
+      it{ expect(@options_hash[:default_params]).to be_nil }
+      it{ expect(@options_hash[:debug_output]).to_not be_nil }
     end
   end
 

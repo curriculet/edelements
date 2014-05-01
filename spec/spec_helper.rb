@@ -16,8 +16,8 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.default_cassette_options = {
     #record:                      (ENV['TRAVIS'] ? :none : :once)
-    #record:                      :new_episodes
-    record:                      :all
+    record:                      :new_episodes
+    #record:                      :all
     #record:                      :none
   }
 
