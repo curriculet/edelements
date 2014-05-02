@@ -6,7 +6,6 @@ describe Edelements::API::Client do
     Edelements::API::Client.new( Edelements )
   }
 
-
   describe 'initialization' do
     describe 'via configure' do
       context "should be initialized by config" do

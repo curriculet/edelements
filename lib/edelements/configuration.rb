@@ -66,10 +66,8 @@ module Edelements
     end
 
     protected
-
     def client
       @client ||= Edelements::API::Client.new( self )
     end
-
   end # Configuration
 end

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=c192382b-0f1d-4327-9bd8-918008c2eced; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Thu, 01-May-2014 14:02:20
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 02 May 2014 14:02:20 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":[{"organization":{"id":"b8eaf45c-cca9-11e3-97de-22000aa43193","nameField":"District
+        of Columbia Public Schools","typeField":"District"}}],"total":1,"page":"1"}'
+    http_version: 
+  recorded_at: Fri, 02 May 2014 14:02:20 GMT
+recorded_with: VCR 2.9.0
