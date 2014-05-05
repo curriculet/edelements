@@ -9,7 +9,37 @@ module Edelements
       end
 
       def show organization_id
-        response = @client.get( "#{ api_model.api_path }/b8eaf45c-cca9-11e3-97de-22000aa43193" )
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }" )
+        api_model.parse(response.body)
+      end
+
+      def organizations organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/organizations" )
+        api_model.parse(response.body)
+      end
+
+      def schools organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/schools" )
+        api_model.parse(response.body)
+      end
+
+      def teachers organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/teachers" )
+        api_model.parse(response.body)
+      end
+
+      def students organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/students" )
+        api_model.parse(response.body)
+      end
+
+      def courses organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/courses" )
+        api_model.parse(response.body)
+      end
+
+      def events organization_id
+        response = @client.get( "#{ api_model.api_path }/#{ organization_id }/events" )
         api_model.parse(response.body)
       end
     end

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=df003f40-1ae0-45e2-8dbe-3558fb1891aa; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 13:10:33
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Mon, 05 May 2014 13:10:33 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":4,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","firstName":"Curriculet","lastName":"StudentTwo","middleName":"Test","email":"","number":"curriculet.teststudent2","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}}],"page":"1"}'
+    http_version: 
+  recorded_at: Mon, 05 May 2014 13:10:33 GMT
+recorded_with: VCR 2.9.0
