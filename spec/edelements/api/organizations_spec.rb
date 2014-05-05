@@ -43,4 +43,38 @@ describe Edelements::Api::Organizations do
       end
     end
   end
+
+  context '#show' do
+    let(:organization){ Edelements.organizations.show(edelements_organization_id) }
+
+    it "should return result" do
+      VCR.use_cassette("organizations") do
+        expect(organization).to_not be_nil
+      end
+    end
+
+    it 'should be hash' do
+      VCR.use_cassette("organizations") do
+        expect(organization).to be_an_instance_of( Edelements::Organization )
+      end
+    end
+
+    it 'should has id key' do
+      VCR.use_cassette('organizations') do
+        expect(organization).to respond_to(:id)
+      end
+    end
+
+    it 'should has nameField key' do
+      VCR.use_cassette('organizations') do
+        expect(organization).to respond_to(:nameField)
+      end
+    end
+
+    it 'should has typeField key' do
+      VCR.use_cassette('organizations') do
+        expect(organization).to respond_to(:typeField)
+      end
+    end
+  end
 end

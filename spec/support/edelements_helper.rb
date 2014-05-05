@@ -9,4 +9,8 @@
    def edelements_api_key
      '7ecb0c9c-cca6-11e3-97de-22000aa43193'
    end
+
+   def edelements_organization_id
+     'b8eaf45c-cca9-11e3-97de-22000aa43193'
+   end
  end
