@@ -4,6 +4,10 @@ module Edelements
       def organizations
         @organizations ||= Edelements::Api::Organizations.new( client )
       end
+
+      def schools
+        @schools ||= Edelements::Api::Schools.new( client )
+      end
     end
   end
 end

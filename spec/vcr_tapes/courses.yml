@@ -41,4 +41,45 @@ http_interactions:
         Test Class 1","schoolYear":"2013-2014","properties":{},"lastUpdate":"1398451214179","teacherEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"b33237a7-880f-4725-b49f-54b0c3f60672","lastUpdate":1398451213000,"role":"Primary","endDate":null}}],"studentEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","lastUpdate":1398451213000,"role":"Student","endDate":null}},{"enrollment":{"startDate":"2014-04-25","userID":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","lastUpdate":1398451213000,"role":"Student","endDate":null}}]}}],"total":2,"page":"1"}'
     http_version: 
   recorded_at: Mon, 05 May 2014 13:46:23 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/courses.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=af18fa53-7cc9-411d-9125-9aac30c3885c; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 14:42:58
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Mon, 05 May 2014 14:42:58 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":[{"course":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","name":"Curriculet
+        Test Class 2","schoolYear":"2013-2014","properties":{},"lastUpdate":"1398451262149","teacherEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"a6fb900f-495e-4b35-880f-bc582c850f6b","lastUpdate":1398451261000,"role":"Primary","endDate":null}}],"studentEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"e61eafb3-2c4a-4d19-965f-8369bc151a25","lastUpdate":1398451261000,"role":"Student","endDate":null}},{"enrollment":{"startDate":"2014-04-25","userID":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","lastUpdate":1398451261000,"role":"Student","endDate":null}}]}},{"course":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","name":"Curriculet
+        Test Class 1","schoolYear":"2013-2014","properties":{},"lastUpdate":"1398451214179","teacherEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"b33237a7-880f-4725-b49f-54b0c3f60672","lastUpdate":1398451213000,"role":"Primary","endDate":null}}],"studentEnrollments":[{"enrollment":{"startDate":"2014-04-25","userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","lastUpdate":1398451213000,"role":"Student","endDate":null}},{"enrollment":{"startDate":"2014-04-25","userID":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","lastUpdate":1398451213000,"role":"Student","endDate":null}}]}}],"total":2,"page":"1"}'
+    http_version: 
+  recorded_at: Mon, 05 May 2014 14:42:59 GMT
 recorded_with: VCR 2.9.0

@@ -13,4 +13,8 @@
    def edelements_organization_id
      'b8eaf45c-cca9-11e3-97de-22000aa43193'
    end
+
+   def edelements_school_id
+     '6ec15b8a-5226-11e3-af88-12313d151e4b'
+   end
  end
