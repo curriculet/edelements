@@ -651,6 +651,72 @@ describe Edelements::Api::Organizations do
   end
 
   context '#events' do
-    pending 'Method not working in server side'
+    let(:events){ Edelements.organizations.events(edelements_organization_id) }
+
+    it "should return not empty array" do
+      VCR.use_cassette('events') do
+        expect(events.data).to_not be_nil
+      end
+    end
+
+    it 'should be array' do
+      VCR.use_cassette("events") do
+        expect(events.data).to be_an_instance_of( Array )
+      end
+    end
+
+    it 'should should be > 0' do
+      VCR.use_cassette('events') do
+        expect(events.data.length).to_not be_zero
+      end
+    end
+
+    it 'should has id key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events).to respond_to(:id)
+      end
+    end
+
+    it 'should has timestamp key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events).to respond_to(:timestamp)
+      end
+    end
+
+    it 'should has eventtype key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events).to respond_to(:eventtype)
+      end
+    end
+
+    it 'should has eventaction key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events).to respond_to(:eventaction)
+      end
+    end
+
+    it 'should has params key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events).to respond_to(:params)
+      end
+    end
+
+    it 'should params[:courseID] key' do
+      VCR.use_cassette('events') do
+        expect(events.data[0].events.params).to respond_to(:courseID)
+      end
+    end
+
+    it 'should has total key' do
+      VCR.use_cassette('events') do
+        expect(events).to respond_to(:total)
+      end
+    end
+
+    it 'should has page key' do
+      VCR.use_cassette('events') do
+        expect(events).to respond_to(:page)
+      end
+    end
   end
 end
