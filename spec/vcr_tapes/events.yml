@@ -117,4 +117,44 @@ http_interactions:
       string: ! '{"total":1,"data":[{"events":{"id":"b0ad9ff0-2096-49f9-b399-612c2283b138","timestamp":1398451341334,"eventtype":"TEACHER","eventaction":"CREATE","params":{"userID":"a6fb900f-495e-4b35-880f-bc582c850f6b"}}}],"page":"1"}'
     http_version: 
   recorded_at: Tue, 06 May 2014 10:49:46 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434/events.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=7bc2bb07-3ad8-4656-ab58-5d249b058cbd; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 05-May-2014 12:42:48
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Tue, 06 May 2014 12:42:48 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":2,"data":[{"events":{"id":"124c1434-ef7d-4883-aaef-a382a9590f57","timestamp":1398451327638,"eventtype":"COURSE
+        ENROLLMENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d"}}},{"events":{"id":"339abb32-614d-4b0d-a474-2218c5e87fb6","timestamp":1398451327715,"eventtype":"STUDENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434"}}}],"page":"1"}'
+    http_version: 
+  recorded_at: Tue, 06 May 2014 12:42:48 GMT
 recorded_with: VCR 2.9.0

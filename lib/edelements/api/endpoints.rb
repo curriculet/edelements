@@ -12,6 +12,10 @@ module Edelements
       def teachers
         @teachers ||= Edelements::Api::Teachers.new( client )
       end
+
+      def students
+        @students ||= Edelements::Api::Students.new( client )
+      end
     end
   end
 end

@@ -123,4 +123,45 @@ http_interactions:
         00:00:00 UTC 2014","Start Date":"Mon Jul 01 00:00:00 UTC 2013"},"lastUpdate":"1398451262149"}}],"page":"1"}'
     http_version: 
   recorded_at: Tue, 06 May 2014 10:42:04 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434/courses.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=9ace701e-abe2-4858-a022-ad357f7ee8fc; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 05-May-2014 12:32:47
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Tue, 06 May 2014 12:32:47 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":[{"course":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","name":"Curriculet
+        Test Class 1","schoolYear":"2013-2014","properties":{"End Date":"Mon Jun 30
+        00:00:00 UTC 2014","Start Date":"Mon Jul 01 00:00:00 UTC 2013"},"lastUpdate":"1398451214179"}}],"total":1,"page":"1"}'
+    http_version: 
+  recorded_at: Tue, 06 May 2014 12:32:47 GMT
 recorded_with: VCR 2.9.0
