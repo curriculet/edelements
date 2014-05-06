@@ -8,6 +8,10 @@ module Edelements
       def schools
         @schools ||= Edelements::Api::Schools.new( client )
       end
+
+      def teachers
+        @teachers ||= Edelements::Api::Teachers.new( client )
+      end
     end
   end
 end

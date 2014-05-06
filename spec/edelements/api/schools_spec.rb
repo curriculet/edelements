@@ -5,7 +5,7 @@ describe Edelements::Api::Schools do
   before { set_testing_configuration }
 
   context '#show' do
-    let(:school){ Edelements.schools.show(edelements_school_id) }
+    let(:school){ Edelements.schools.show( edelements_school_id ) }
 
     it "should return result" do
       VCR.use_cassette("schools") do

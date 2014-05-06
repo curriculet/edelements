@@ -17,4 +17,8 @@
    def edelements_school_id
      '6ec15b8a-5226-11e3-af88-12313d151e4b'
    end
+
+   def edelements_teacher_id
+     'a6fb900f-495e-4b35-880f-bc582c850f6b'
+   end
  end
