@@ -32,7 +32,7 @@ describe Edelements::API::Client do
         configuration_hash = {
             endpoint:    'https://example.com',
             api_version: 'v52',
-            api_key:     'my_edmodo_api_key',
+            api_key:     'my_edelements_api_key',
             testing:      true
         }
         @options_hash = client.class.default_options
@@ -56,35 +56,11 @@ describe Edelements::API::Client do
         expect{ client.get("/organizations.json") }.not_to raise_error
       end
     end
-    #it "should raise Edelements::BadRequest with response status is 400" do
-      #VCR.use_cassette("errors") do
-        #expect{ client.get("/400") }.to raise_error  Edelements::BadRequest
-      #end
-    #end
-    #it "should raise Edelements::AuthenticationFailed with response status is 401" do
-      #VCR.use_cassette("errors") do
-        #expect{ client.get("/401") }.to raise_error  Edelements::AuthenticationFailed
-      #end
-    #end
+
     it "should raise Edelements::NotFound with response status is 404" do
       VCR.use_cassette("errors") do
         expect{ client.get("/404") }.to raise_error  Edelements::NotFound
       end
     end
-    #it "should raise Edelements::ServerError with response status is 500" do
-      #VCR.use_cassette("errors") do
-        #expect{ client.get("/500") }.to raise_error  Edelements::ServerError
-      #end
-    #end
-    #it "should raise Edelements::Unavailable with response status is 502" do
-      #VCR.use_cassette("errors") do
-        #expect{ client.get("/502") }.to raise_error  Edelements::Unavailable
-      #end
-    #end
-    #it "should raise Edelements::UnknownStatusCode. with response status is not listed above" do
-      #VCR.use_cassette("errors") do
-        #expect{ client.get("/499") }.to raise_error  Edelements::UnknownStatusCode
-      #end
-    #end
   end
 end

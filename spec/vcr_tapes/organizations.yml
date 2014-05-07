@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/organizations.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,8 +17,8 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=c192382b-0f1d-4327-9bd8-918008c2eced; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Thu, 01-May-2014 14:02:20
+      - JSESSIONID=f66597d7-a817-4771-bded-ca0513b1e996; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:31:00
         GMT
       Pragma:
       - no-cache
@@ -33,16 +33,15 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Fri, 02 May 2014 14:02:20 GMT
+      - Wed, 07 May 2014 13:31:00 GMT
     body:
       encoding: US-ASCII
-      string: ! '{"data":[{"organization":{"id":"b8eaf45c-cca9-11e3-97de-22000aa43193","nameField":"District
-        of Columbia Public Schools","typeField":"District"}}],"total":1,"page":"1"}'
+      string: ! '{"data":[],"total":0,"page":"1"}'
     http_version: 
-  recorded_at: Fri, 02 May 2014 14:02:20 GMT
+  recorded_at: Wed, 07 May 2014 13:31:00 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193.json
     body:
       encoding: US-ASCII
       string: ''
@@ -57,24 +56,24 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=4653cdd9-6035-45ba-a208-1b9c26659e79; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 09:43:14
+      - JSESSIONID=0a40cb40-f7d4-470c-87a8-9d44fb7981e4; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:38
         GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Date:
-      - Mon, 05 May 2014 09:43:14 GMT
+      - Wed, 07 May 2014 13:36:38 GMT
     body:
       encoding: US-ASCII
       string: ! '{"id":"b8eaf45c-cca9-11e3-97de-22000aa43193","nameField":"District
         of Columbia Public Schools","typeField":"District"}'
     http_version: 
-  recorded_at: Mon, 05 May 2014 09:43:14 GMT
+  recorded_at: Wed, 07 May 2014 13:36:38 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/organizations.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/organizations.json
     body:
       encoding: US-ASCII
       string: ''
@@ -89,8 +88,8 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=838018cf-91df-4306-a72e-b62614e8322f; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 10:23:15
+      - JSESSIONID=b50fe5a0-ef09-4bd6-a4c5-593727b041ca; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:39
         GMT
       Pragma:
       - no-cache
@@ -105,10 +104,11 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Mon, 05 May 2014 10:23:15 GMT
+      - Wed, 07 May 2014 13:36:39 GMT
     body:
       encoding: US-ASCII
-      string: ! '{"data":[],"total":0,"page":"1"}'
+      string: ! '{"data":[{"organization":{"id":"b8eaf45c-cca9-11e3-97de-22000aa43193","nameField":"District
+        of Columbia Public Schools","typeField":"District"}}],"total":1,"page":"1"}'
     http_version: 
-  recorded_at: Mon, 05 May 2014 10:23:15 GMT
+  recorded_at: Wed, 07 May 2014 13:36:39 GMT
 recorded_with: VCR 2.9.0

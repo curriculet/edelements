@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/students.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,140 +17,23 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=df003f40-1ae0-45e2-8dbe-3558fb1891aa; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 13:10:33
-        GMT
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache, no-store, max-age=0
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Content-Language:
-      - en-US
-      Transfer-Encoding:
-      - chunked
-      Date:
-      - Mon, 05 May 2014 13:10:33 GMT
-    body:
-      encoding: US-ASCII
-      string: ! '{"total":4,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","firstName":"Curriculet","lastName":"StudentTwo","middleName":"Test","email":"","number":"curriculet.teststudent2","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}}],"page":"1"}'
-    http_version: 
-  recorded_at: Mon, 05 May 2014 13:10:33 GMT
-- request:
-    method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/students.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Edelements API Ruby Gem by Curriculet
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache-Coyote/1.1
-      Set-Cookie:
-      - JSESSIONID=faac2807-f031-4e33-94d9-801c08663c3b; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sun, 04-May-2014 15:07:21
-        GMT
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache, no-store, max-age=0
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Content-Language:
-      - en-US
-      Transfer-Encoding:
-      - chunked
-      Date:
-      - Mon, 05 May 2014 15:07:22 GMT
-    body:
-      encoding: US-ASCII
-      string: ! '{"total":4,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","firstName":"Curriculet","lastName":"StudentTwo","middleName":"Test","email":"","number":"curriculet.teststudent2","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}}],"page":"1"}'
-    http_version: 
-  recorded_at: Mon, 05 May 2014 15:07:22 GMT
-- request:
-    method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/students.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Edelements API Ruby Gem by Curriculet
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache-Coyote/1.1
-      Set-Cookie:
-      - JSESSIONID=308ce9b5-deca-4d21-a851-8e1e12b928d8; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 05-May-2014 10:38:01
-        GMT
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache, no-store, max-age=0
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Content-Language:
-      - en-US
-      Transfer-Encoding:
-      - chunked
-      Date:
-      - Tue, 06 May 2014 10:38:02 GMT
-    body:
-      encoding: US-ASCII
-      string: ! '{"total":2,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}}],"page":"1"}'
-    http_version: 
-  recorded_at: Tue, 06 May 2014 10:38:02 GMT
-- request:
-    method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Edelements API Ruby Gem by Curriculet
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache-Coyote/1.1
-      Set-Cookie:
-      - JSESSIONID=49969ffa-371a-4c68-b22f-f130bd768aea; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 05-May-2014 12:27:55
+      - JSESSIONID=d93adeb0-e4b5-4961-8da9-482d80406853; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:30:58
         GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Date:
-      - Tue, 06 May 2014 12:27:55 GMT
+      - Wed, 07 May 2014 13:30:59 GMT
     body:
       encoding: US-ASCII
       string: ! '{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":1398384000000,"courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}'
     http_version: 
-  recorded_at: Tue, 06 May 2014 12:27:56 GMT
+  recorded_at: Wed, 07 May 2014 13:30:59 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/students.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/students.json
     body:
       encoding: US-ASCII
       string: ''
@@ -165,8 +48,8 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=b773e513-3de5-4e12-a276-4aec6e14e453; Path=/; HttpOnly
-      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 10:30:50
+      - JSESSIONID=18f354da-7ac0-46c7-81ee-a0f0f243e3b4; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:24
         GMT
       Pragma:
       - no-cache
@@ -181,10 +64,127 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Wed, 07 May 2014 10:30:51 GMT
+      - Wed, 07 May 2014 13:36:25 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":2,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 13:36:25 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=3dfce264-8187-47bf-9ae6-3186436b7a40; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:28
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 13:36:28 GMT
     body:
       encoding: US-ASCII
       string: ! '{"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}}],"total":2,"page":"1"}'
     http_version: 
-  recorded_at: Wed, 07 May 2014 10:30:51 GMT
+  recorded_at: Wed, 07 May 2014 13:36:29 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=4aa8b375-1b00-48e2-a29f-e23a013cfc4e; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:31
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 13:36:32 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":4,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","firstName":"Curriculet","lastName":"StudentTwo","middleName":"Test","email":"","number":"curriculet.teststudent2","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 13:36:32 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=4f06df54-1702-4a57-b616-3a77dc463cf3; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 13:36:35
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 13:36:34 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":4,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","firstName":"Curriculet","lastName":"StudentOne","middleName":"Test","email":"","number":"curriculet.teststudent1","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"85692627-b6c5-4778-b2ec-a7ac2c43ff67","firstName":"Curriculet","lastName":"StudentTwo","middleName":"Test","email":"","number":"curriculet.teststudent2","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Student","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"gradeLevel":7}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 13:36:35 GMT
 recorded_with: VCR 2.9.0

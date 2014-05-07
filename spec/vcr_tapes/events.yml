@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/events.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/organizations/b8eaf45c-cca9-11e3-97de-22000aa43193/events.json
     body:
       encoding: US-ASCII
       string: ''
@@ -37,11 +37,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"data":[{"events":{"id":"8e9a1df7-ec30-44ce-a33e-89e96c98888b","timestamp":1371824762994,"eventtype":"COURSE","eventaction":"UPDATE","params":{"courseID":"78c24f43-3932-4ac4-af26-fffcc759b1f3"}}}],"total":56714,"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 06 May 2014 09:18:33 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/events.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/events.json
     body:
       encoding: US-ASCII
       string: ''
@@ -76,11 +76,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"data":[{"events":{"id":"8e9a1df7-ec30-44ce-a33e-89e96c98888b","timestamp":1371824762994,"eventtype":"COURSE","eventaction":"UPDATE","params":{"courseID":"78c24f43-3932-4ac4-af26-fffcc759b1f3"}}}],"total":56714,"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 06 May 2014 09:40:22 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/events.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/events.json
     body:
       encoding: US-ASCII
       string: ''
@@ -115,11 +115,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"total":1,"data":[{"events":{"id":"b0ad9ff0-2096-49f9-b399-612c2283b138","timestamp":1398451341334,"eventtype":"TEACHER","eventaction":"CREATE","params":{"userID":"a6fb900f-495e-4b35-880f-bc582c850f6b"}}}],"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 06 May 2014 10:49:46 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434/events.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434/events.json
     body:
       encoding: US-ASCII
       string: ''
@@ -155,11 +155,11 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"total":2,"data":[{"events":{"id":"124c1434-ef7d-4883-aaef-a382a9590f57","timestamp":1398451327638,"eventtype":"COURSE
         ENROLLMENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d"}}},{"events":{"id":"339abb32-614d-4b0d-a474-2218c5e87fb6","timestamp":1398451327715,"eventtype":"STUDENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434"}}}],"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 06 May 2014 12:42:48 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/events.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/events.json
     body:
       encoding: US-ASCII
       string: ''
@@ -196,11 +196,11 @@ http_interactions:
       string: ! '{"data":[{"events":{"id":"a423557b-699d-4eb6-b6db-d1aeaa74d1a7","timestamp":1398451341252,"eventtype":"COURSE","eventaction":"CREATE","params":{"courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}},{"events":{"id":"9c736f7a-0636-4ed6-a78b-736c61d2c96e","timestamp":1398451341421,"eventtype":"COURSE
         ENROLLMENT","eventaction":"CREATE","params":{"userID":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}},{"events":{"id":"0dafbe3d-9871-4cb9-aa1d-36302b664701","timestamp":1398451341584,"eventtype":"COURSE
         ENROLLMENT","eventaction":"CREATE","params":{"userID":"e61eafb3-2c4a-4d19-965f-8369bc151a25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}}],"total":3,"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 10:41:12 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/b0ad9ff0-2096-49f9-b399-612c2283b138.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/b0ad9ff0-2096-49f9-b399-612c2283b138.json
     body:
       encoding: US-ASCII
       string: ''
@@ -227,11 +227,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"id":"b0ad9ff0-2096-49f9-b399-612c2283b138","timestamp":1398451341334,"eventtype":"TEACHER","eventaction":"CREATE","params":{"userID":"a6fb900f-495e-4b35-880f-bc582c850f6b"}}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:01:05 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/eventtypes.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/eventtypes.json
     body:
       encoding: US-ASCII
       string: ''
@@ -266,11 +266,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"eventtype":["COURSE","STUDENT","TEACHER","COURSE ENROLLMENT"]}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:09:29 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
     body:
       encoding: US-ASCII
       string: ''
@@ -305,11 +305,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"data":[],"total":0,"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:11:21 GMT
 - request:
     method: get
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
     body:
       encoding: US-ASCII
       string: ''
@@ -344,11 +344,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{"data":[],"total":0,"page":"1"}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:40:31 GMT
 - request:
     method: put
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
     body:
       encoding: US-ASCII
       string: ''
@@ -389,11 +389,11 @@ http_interactions:
         cause</b> <pre>java.lang.NullPointerException\n\tcom.edelements.platform.web.handler.PlatformExceptionResolver.resolveException(PlatformExceptionResolver.java:63)\n\torg.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1120)\n\torg.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:944)\n\torg.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:852)\n\torg.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)\n\torg.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:800)\n\tjavax.servlet.http.HttpServlet.service(HttpServlet.java:644)\n\tjavax.servlet.http.HttpServlet.service(HttpServlet.java:722)\n\tcom.edelements.platform.web.filter.RestMethodFilter.doFilter(RestMethodFilter.java:78)\n\torg.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:178)\n\torg.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:155)\n\torg.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)\n\torg.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)\n\torg.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)\n\torg.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)\n\torg.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)\n\torg.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)\n\torg.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)\n\torg.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)\n\torg.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)\n\torg.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)\n\torg.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)\n\torg.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)\n\torg.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)\n\torg.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)\n\torg.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)\n\torg.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)\n</pre></p><p><b>note</b>
         <u>The full stack trace of the root cause is available in the Apache Tomcat/7.0.32
         logs.</u></p><HR size=\"1\" noshade=\"noshade\"><h3>Apache Tomcat/7.0.32</h3></body></html>"
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:41:06 GMT
 - request:
     method: post
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json?endpoint=https://api.endpoint.com/enrollmentEvents&eventtype=COURSE%20ENROLLMENT&schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&token=super%20token
     body:
       encoding: US-ASCII
       string: ''
@@ -433,11 +433,11 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>The server encountered an internal error
         that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.32</h3></body></html>'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:41:52 GMT
 - request:
     method: post
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
     body:
       encoding: US-ASCII
       string: schoolID=6ec15b8a-5226-11e3-af88-12313d151e4b&endpoint=https%3A%2F%2Fapi.endpoint.com%2FenrollmentEvents&eventtype=COURSE%20ENROLLMENT&token=super%20token
@@ -477,11 +477,11 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>The server encountered an internal error
         that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.32</h3></body></html>'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:44:17 GMT
 - request:
     method: post
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
     body:
       encoding: UTF-8
       string: ! '{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","endpoint":"https://api.endpoint.com/enrollmentEvents","eventtype":"COURSE
@@ -522,11 +522,11 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>The server encountered an internal error
         that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.32</h3></body></html>'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:50:36 GMT
 - request:
     method: post
-    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/events/webhooks.json
     body:
       encoding: UTF-8
       string: ! '{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","endpoint":"https://api.endpoint.com/enrollmentEvents","eventtype":"COURSE
@@ -567,6 +567,6 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>The server encountered an internal error
         that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.32</h3></body></html>'
-    http_version: 
+    http_version:
   recorded_at: Wed, 07 May 2014 12:50:39 GMT
 recorded_with: VCR 2.9.0

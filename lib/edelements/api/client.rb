@@ -56,7 +56,7 @@ module Edelements
         yield get_options if block_given?
 
         #puts "CALLING API: #{Edmodo.api_url( path )} ===#{get_options}"
-        response = self.class.get( "#{ path }.json", get_options.merge({ basic_auth: { username: '7ecb0c9c-cca6-11e3-97de-22000aa43193', password: ''} } ))
+        response = self.class.get( "#{ path }.json", get_options.merge({ basic_auth: { username: Edelements.options[:api_key], password: ''} } ))
 
         case response.code
         when 200..201

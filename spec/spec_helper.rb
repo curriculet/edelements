@@ -21,13 +21,7 @@ VCR.configure do |c|
     #record:                      :none
   }
 
-  #c.filter_sensitive_data("<EDMODO_API_KEY>") do
-    #edmodo_api_key
-  #end
-
-  #c.filter_sensitive_data("<EDMODO_ACCESS_TOKEN>") do
-      #edmodo_access_token
-  #end
+  c.filter_sensitive_data("<API_KEY>") { Edelements.options[:api_key] }
 end
 
 RSpec.configure do |config|
@@ -37,12 +31,3 @@ RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
   config.order = "random"
 end
-
-
-#def edmodo_api_key
-  #ENV.fetch 'EDMODO_API_KEY', 'x' * 40
-#end
-
-#def edmodo_access_token
-  #ENV.fetch 'EDMODO_ACCESS_TOKEN', 'atok_xxxxxxxxxxxxxxxxxxxx'
-#end
