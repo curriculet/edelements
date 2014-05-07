@@ -187,4 +187,86 @@ http_interactions:
       string: ! '{"data":[{"teacher":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a6fb900f-495e-4b35-880f-bc582c850f6b","firstName":"Curriculet","lastName":"TeacherTwo","middleName":"Test","email":"curriculet.teacher2@curriculet.teacher2.com","number":"curriculet.teacher2","courseEnrollments":[{"enrollment":{"startDate":1398384000000,"courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Primary","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623"}}],"total":1,"page":"1"}'
     http_version: 
   recorded_at: Wed, 07 May 2014 10:16:35 GMT
+- request:
+    method: put
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/properties/superproperty.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=02b55c02-2e33-45c6-923a-4e44e701c246; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 12:22:10
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 12:22:10 GMT
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 12:22:10 GMT
+- request:
+    method: put
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/properties/firstName.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=c6d62baf-0058-48f4-a0fa-d2bfa948be25; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 12:23:59
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 12:23:59 GMT
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! '{}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 12:23:59 GMT
 recorded_with: VCR 2.9.0

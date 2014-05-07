@@ -29,4 +29,8 @@
    def edelements_course_id
      '8bcc2d23-bdf8-4a3d-accf-b780c14afb5f'
    end
+
+   def edelements_event_id
+     'b0ad9ff0-2096-49f9-b399-612c2283b138'
+   end
  end

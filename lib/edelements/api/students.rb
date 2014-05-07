@@ -23,16 +23,8 @@ module Edelements
         api_model.parse(response.body)
       end
 
-      def properties params
-      end
-
-      def photo id
-        response = @client.get( "#{ api_model.api_path }/#{ id }/photo" )
-        api_model.parse(response.body)
-      end
-
-      def activity id
-        response = @client.get( "#{ api_model.api_path }/#{ id }/activity" )
+      def add_properties id, property
+        response = @client.put( "#{ api_model.api_path }/#{ id }/properties/#{ property }" )
         api_model.parse(response.body)
       end
     end

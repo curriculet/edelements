@@ -409,12 +409,4 @@ describe Edelements::Api::Teachers do
       end
     end
   end
-
-  context '#photo' do
-    pending 'not working in server side'
-  end
-
-  context '#activity' do
-    pending 'not working in server side'
-  end
 end

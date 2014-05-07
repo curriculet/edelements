@@ -20,6 +20,10 @@ module Edelements
       def courses
         @courses ||= Edelements::Api::Courses.new( client )
       end
+
+      def events
+        @events ||= Edelements::Api::Events.new( client )
+      end
     end
   end
 end

@@ -23,7 +23,9 @@ module Edelements
         api_model.parse(response.body)
       end
 
-      def properties params
+      def add_properties id, property
+        response = @client.put( "#{ api_model.api_path }/#{ id }/properties/#{ property }" )
+        api_model.parse(response.body)
       end
     end
   end
