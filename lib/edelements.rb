@@ -7,6 +7,7 @@ require 'edelements/version'
 require 'edelements/api/client'
 require 'edelements/errors'
 
+# Data Models
 require 'edelements/model'
 require 'edelements/organization'
 require 'edelements/school'
@@ -15,6 +16,7 @@ require 'edelements/student'
 require 'edelements/course'
 require 'edelements/event'
 
+#API Operations
 require 'edelements/api/resource'
 require 'edelements/api/courses'
 require 'edelements/api/events'
