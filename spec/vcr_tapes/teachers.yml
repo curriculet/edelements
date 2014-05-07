@@ -148,4 +148,43 @@ http_interactions:
       string: ! '{"data":[{"teacher":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"b33237a7-880f-4725-b49f-54b0c3f60672","firstName":"Curriculet","lastName":"TeacherOne","middleName":"Test","email":"curriculet.teacher1@curriculet.teacher1.com","number":"curriculet.teacher1","courseEnrollments":[{"enrollment":{"startDate":1398384000000,"courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Primary","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623"}}],"total":1,"page":"1"}'
     http_version: 
   recorded_at: Tue, 06 May 2014 12:30:29 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/teachers.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=cd314ff4-33c3-46ff-b9a6-56aad881a70c; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 10:16:33
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 10:16:34 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":[{"teacher":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a6fb900f-495e-4b35-880f-bc582c850f6b","firstName":"Curriculet","lastName":"TeacherTwo","middleName":"Test","email":"curriculet.teacher2@curriculet.teacher2.com","number":"curriculet.teacher2","courseEnrollments":[{"enrollment":{"startDate":1398384000000,"courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Primary","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623"}}],"total":1,"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 10:16:35 GMT
 recorded_with: VCR 2.9.0

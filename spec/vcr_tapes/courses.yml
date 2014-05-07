@@ -164,4 +164,37 @@ http_interactions:
         00:00:00 UTC 2014","Start Date":"Mon Jul 01 00:00:00 UTC 2013"},"lastUpdate":"1398451214179"}}],"total":1,"page":"1"}'
     http_version: 
   recorded_at: Tue, 06 May 2014 12:32:47 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=881d6b53-8e53-45ad-8022-678fa5f75ab6; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 10:00:02
+        GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 10:00:02 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","name":"Curriculet
+        Test Class 2","schoolYear":"2013-2014","properties":{"End Date":"Mon Jun 30
+        00:00:00 UTC 2014","Start Date":"Mon Jul 01 00:00:00 UTC 2013"},"lastUpdate":"1398451262149","teacherEnrollments":[{"enrollment":{"startDate":1398384000000,"userID":"a6fb900f-495e-4b35-880f-bc582c850f6b","lastUpdate":1398451261000,"role":"Primary","endDate":null}}],"studentEnrollments":[{"enrollment":{"startDate":1398384000000,"userID":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","lastUpdate":1398451261000,"role":"Student","endDate":null}},{"enrollment":{"startDate":1398384000000,"userID":"e61eafb3-2c4a-4d19-965f-8369bc151a25","lastUpdate":1398451261000,"role":"Student","endDate":null}}]}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 10:00:02 GMT
 recorded_with: VCR 2.9.0

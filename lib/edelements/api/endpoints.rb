@@ -16,6 +16,10 @@ module Edelements
       def students
         @students ||= Edelements::Api::Students.new( client )
       end
+
+      def courses
+        @courses ||= Edelements::Api::Courses.new( client )
+      end
     end
   end
 end

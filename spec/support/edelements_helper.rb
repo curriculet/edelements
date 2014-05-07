@@ -25,4 +25,8 @@
    def edelements_student_id
      'a3a829b0-914c-4e2e-a7d6-67aa0cbea434'
    end
+
+   def edelements_course_id
+     '8bcc2d23-bdf8-4a3d-accf-b780c14afb5f'
+   end
  end

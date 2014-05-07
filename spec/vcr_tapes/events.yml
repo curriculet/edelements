@@ -157,4 +157,45 @@ http_interactions:
         ENROLLMENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d"}}},{"events":{"id":"339abb32-614d-4b0d-a474-2218c5e87fb6","timestamp":1398451327715,"eventtype":"STUDENT","eventaction":"CREATE","params":{"userID":"a3a829b0-914c-4e2e-a7d6-67aa0cbea434"}}}],"page":"1"}'
     http_version: 
   recorded_at: Tue, 06 May 2014 12:42:48 GMT
+- request:
+    method: get
+    uri: http://7ecb0c9c-cca6-11e3-97de-22000aa43193:@johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/events.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=a6d52c1f-8f20-4d8e-9343-555df31da978; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 06-May-2014 10:41:12
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 07 May 2014 10:41:12 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"data":[{"events":{"id":"a423557b-699d-4eb6-b6db-d1aeaa74d1a7","timestamp":1398451341252,"eventtype":"COURSE","eventaction":"CREATE","params":{"courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}},{"events":{"id":"9c736f7a-0636-4ed6-a78b-736c61d2c96e","timestamp":1398451341421,"eventtype":"COURSE
+        ENROLLMENT","eventaction":"CREATE","params":{"userID":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}},{"events":{"id":"0dafbe3d-9871-4cb9-aa1d-36302b664701","timestamp":1398451341584,"eventtype":"COURSE
+        ENROLLMENT","eventaction":"CREATE","params":{"userID":"e61eafb3-2c4a-4d19-965f-8369bc151a25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f"}}}],"total":3,"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 07 May 2014 10:41:12 GMT
 recorded_with: VCR 2.9.0
