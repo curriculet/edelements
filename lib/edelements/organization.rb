@@ -3,5 +3,6 @@ module Edelements
     include Edelements::Model
 
     api_path '/organizations'
+
   end
 end

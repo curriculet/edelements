@@ -35,17 +35,70 @@ module Edelements
       end
 
 
-      # parse
+      # These are the 2 types of responses that we get from the API
+      #
+      # MultiRecord Response (i.e. organizations.list)
+      #
+      # Returns all organizations
+      #
+      # GET  /v1_0/organizations.json
+      #   {
+      #     "data":
+      #       [
+      #         {
+      #           "organization": {
+      #             "id": guid field,
+      #             "parentID”: parentID field,
+      #             "name": nameField,
+      #             "typeField": typeFIeld
+      #           }
+      #         }
+      #       ],
+      #       "page": ,
+      #       "total":
+      #   }
+      #
+
+      #  Single Record Response (i.e. organizations.show)
+      #
+      # Returns specific organization
+      #
+      # GET  /v1_0/organizations/{id}.json
+      #
+      #   {
+      #     "organization":
+      #       {
+      #         "id": guid field,
+      #         "parentID": parentID field,
+      #         "name": nameField,
+      #         "typeField": typeFIeld
+      #       }
+      #   }
+      #
+      # Details
+      #
+
       # Parses a request.body response into a Edelements::Model objects
-      def parse(json)
-        parsed = String === json ? JSON.parse(json) : json
-        if parsed.is_a? Array
-          return parsed.map {|attrs|  new(attrs)  }
+      def parse( raw_json )
+        parsed_json = String === raw_json ? JSON.parse(raw_json) : json
+        if parsed_json.has_key?('data')
+          #this is a multi record and data should contain an array
+          raise Edelements::CannotProcessResponse.new('[:data] is present in response but it does not contain an Array') unless parsed_json['data'].is_a? Array
+          return parsed_json['data'].map {|array_element|  new( extract_record(array_element) )  }
         else
-          return  new(parsed)
+          return  new( parsed_json )
         end
       end
 
+      def extract_record( parsed_record )
+        #each record comes in a <record_name>:{package}
+        raise Edelements::CannotProcessResponse.new("[#{record_name}] is NOT present in response") unless parsed_record.has_key?(record_name.to_s)
+        parsed_record[record_name]
+      end
+
+      def record_name
+        @record_name ||= self.name.split('::').last.downcase
+      end
     end
 
   end

@@ -1,5 +1,6 @@
 module Edelements
   class InvalidCredentials < StandardError; end
+  class CannotProcessResponse < StandardError; end
 
   class HTTPError < StandardError
     attr_reader :response
