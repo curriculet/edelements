@@ -55,8 +55,8 @@ module Edelements
         get_options = build_get_options( params, headers)
         yield get_options if block_given?
 
-        #puts "CALLING API: #{Edmodo.api_url( path )} ===#{get_options}"
-        response = self.class.get( "#{ path }.json", get_options.merge({ basic_auth: { username: Edelements.options[:api_key], password: ''} } ))
+        #puts "CALLING API: #{Edelements.api_url( path )} ===#{get_options}"
+        response = self.class.get( "#{ path }.json", get_options)
 
         case response.code
         when 200..201
@@ -87,16 +87,17 @@ module Edelements
       # @return [Hash] The properly formated get_options.
       def build_get_options( params={}, user_headers={})
         get_options = {}
-        query = {}
+        query ={}
 
         query.merge!(params)
-        get_options[:query]   = query
 
         # pass any headers
         headers ={}
         headers.merge!( user_headers )
-        get_options[:headers] = headers
 
+        get_options[:query]      = query
+        get_options[:headers]    = headers
+        get_options[:basic_auth] = { username: Edelements.options[:api_key], password: ''}
         get_options
       end
     end

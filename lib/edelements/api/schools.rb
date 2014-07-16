@@ -92,7 +92,7 @@ module Edelements
 
       def teachers id
         response = @client.get( "#{ api_model.api_path }/#{ id }/teachers" )
-        api_model.parse(response.body)
+        Edelements::Teacher.parse(response.body)
       end
 
       # students
@@ -151,7 +151,7 @@ module Edelements
 
       def students id
         response = @client.get( "#{ api_model.api_path }/#{ id }/students" )
-        api_model.parse(response.body)
+        Edelements::School.parse(response.body)
       end
 
       # courses
@@ -210,7 +210,7 @@ module Edelements
 
       def courses id
         response = @client.get( "#{ api_model.api_path }/#{ id }/courses" )
-        api_model.parse(response.body)
+        Edelements::Course.parse(response.body)
       end
 
       # events
@@ -244,7 +244,7 @@ module Edelements
 
       def events id
         response = @client.get( "#{ api_model.api_path }/#{ id }/events" )
-        api_model.parse(response.body)
+        Edelements::Event.parse(response.body)
       end
 
       #def add_properties id, property

@@ -187,4 +187,160 @@ http_interactions:
       string: ! '{"data":[{"teacher":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"a6fb900f-495e-4b35-880f-bc582c850f6b","firstName":"Curriculet","lastName":"TeacherTwo","middleName":"Test","email":"curriculet.teacher2@curriculet.teacher2.com","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","lastUpdate":1398451261000,"role":"Primary","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""}}},{"teacher":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"b33237a7-880f-4725-b49f-54b0c3f60672","firstName":"Curriculet","lastName":"TeacherOne","middleName":"Test","email":"curriculet.teacher1@curriculet.teacher1.com","courseEnrollments":[{"enrollment":{"startDate":"2014-04-25","courseID":"0c5d5352-a224-4a34-add4-b9a4b5c7bb1d","lastUpdate":1398451213000,"role":"Primary","endDate":null}}],"address":{"street2":"","zip":"","street1":"","state":"","city":""}}}],"total":2,"page":"1"}'
     http_version: 
   recorded_at: Wed, 07 May 2014 13:36:38 GMT
-recorded_with: VCR 2.9.0
+- request:
+    method: get
+    uri: http://johnson-test-1.edelements.com/v1_0/students/a3a829b0-914c-4e2e-a7d6-67aa0cbea434/teachers.json?basic_auth%5Bpassword%5D=&basic_auth%5Busername%5D=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Www-Authenticate:
+      - BASIC realm="application"
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '951'
+      Date:
+      - Wed, 16 Jul 2014 11:03:06 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '<html><head><title>Apache Tomcat/7.0.32 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 401 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>This request requires HTTP authentication.</u></p><HR
+        size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 11:03:07 GMT
+- request:
+    method: get
+    uri: http://johnson-test-1.edelements.com/v1_0/courses/8bcc2d23-bdf8-4a3d-accf-b780c14afb5f/teachers.json?basic_auth%5Bpassword%5D=&basic_auth%5Busername%5D=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Www-Authenticate:
+      - BASIC realm="application"
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '951'
+      Date:
+      - Wed, 16 Jul 2014 11:03:08 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '<html><head><title>Apache Tomcat/7.0.32 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 401 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>This request requires HTTP authentication.</u></p><HR
+        size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 11:03:10 GMT
+- request:
+    method: get
+    uri: http://johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b.json?basic_auth%5Bpassword%5D=&basic_auth%5Busername%5D=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Www-Authenticate:
+      - BASIC realm="application"
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '951'
+      Date:
+      - Wed, 16 Jul 2014 11:03:10 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '<html><head><title>Apache Tomcat/7.0.32 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 401 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>This request requires HTTP authentication.</u></p><HR
+        size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 11:03:11 GMT
+- request:
+    method: get
+    uri: http://johnson-test-1.edelements.com/v1_0/schools/6ec15b8a-5226-11e3-af88-12313d151e4b/teachers.json?basic_auth%5Bpassword%5D=&basic_auth%5Busername%5D=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Www-Authenticate:
+      - BASIC realm="application"
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '951'
+      Date:
+      - Wed, 16 Jul 2014 11:03:11 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '<html><head><title>Apache Tomcat/7.0.32 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 401 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>This request requires HTTP authentication.</u></p><HR
+        size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 11:03:13 GMT
+recorded_with: VCR 2.9.2
