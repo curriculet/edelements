@@ -92,6 +92,7 @@ module Edelements
 
       def extract_record( parsed_record )
         #each record comes in a <record_name>:{package}
+        return parsed_record if record_name.nil? || record_name.length <= 0
         raise Edelements::CannotProcessResponse.new("[#{record_name}] is NOT present in response") unless parsed_record.has_key?(record_name.to_s)
         parsed_record[record_name]
       end

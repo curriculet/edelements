@@ -50,7 +50,7 @@ module Edelements
 
       def eventtypes
         response = @client.get( "#{ api_model.api_path }/eventtypes" )
-        api_model.parse(response.body)
+        Hashie::Mash.new( JSON.parse(response.body) )
       end
 
       # webhooks
@@ -80,7 +80,7 @@ module Edelements
 
       def webhooks
         response = @client.get( "#{ api_model.api_path }/webhooks" )
-        api_model.parse(response.body)
+        Edelements::Webhook.parse(response.body)
       end
     end
   end

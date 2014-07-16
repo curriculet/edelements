@@ -15,6 +15,7 @@ require 'edelements/teacher'
 require 'edelements/student'
 require 'edelements/course'
 require 'edelements/event'
+require 'edelements/webhook'
 
 #API Operations
 require 'edelements/api/resource'
