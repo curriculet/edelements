@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Edelements::Api::Courses do
+describe Edelements::Api::Courses,  :vcr => { :cassette_name => "courses" } do
 
   before { set_testing_configuration }
 
@@ -8,166 +8,111 @@ describe Edelements::Api::Courses do
     let(:course){ Edelements.courses.show( edelements_course_id ) }
 
     it "should return not empty array" do
-      VCR.use_cassette('courses') do
-        expect(course).to_not be_nil
-      end
+      expect(course).to_not be_nil
     end
 
-    it 'should be array' do
-      VCR.use_cassette("courses") do
-        expect(course).to be_an_instance_of( Edelements::Course )
-      end
+    it 'should be Edelements::Course' do
+      expect(course).to be_an_instance_of( Edelements::Course )
     end
 
     it 'should should be > 0' do
-      VCR.use_cassette('courses') do
-        expect(course.length).to_not be_zero
-      end
+      expect(course.length).to_not be_zero
     end
 
     it 'should has id key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:id)
-      end
+      expect(course).to respond_to(:id)
     end
 
     it 'should has schoolID key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:schoolID)
-      end
+      expect(course).to respond_to(:schoolID)
     end
 
     it 'should has name key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:name)
-      end
+      expect(course).to respond_to(:name)
     end
 
     it 'should has schoolYear key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:schoolYear)
-      end
+      expect(course).to respond_to(:schoolYear)
     end
 
     it 'should has properties key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:properties)
-      end
+      expect(course).to respond_to(:properties)
     end
 
     it 'should has properties["Start Date"] key' do
-      VCR.use_cassette('courses') do
-        expect(course.properties).to respond_to('Start Date')
-      end
+      expect(course.properties).to respond_to('Start Date')
     end
 
     it 'should has properties["End Date"] key' do
-      VCR.use_cassette('courses') do
-        expect(course.properties).to respond_to('End Date')
-      end
+      expect(course.properties).to respond_to('End Date')
     end
 
-
     it 'should has lastUpdate key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:lastUpdate)
-      end
+      expect(course).to respond_to(:lastUpdate)
     end
 
     it 'should has teacherEnrollments key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:teacherEnrollments)
-      end
+      expect(course).to respond_to(:teacherEnrollments)
     end
 
     it 'should has teacherEnrollments[:enrolment] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0]).to respond_to(:enrollment)
-      end
+      expect(course.teacherEnrollments[0]).to respond_to(:enrollment)
     end
 
     it 'should has teacherEnrollments should be Array' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments).to be_an_instance_of(Array)
-      end
+      expect(course.teacherEnrollments).to be_an_instance_of(Array)
     end
 
     it 'should has teacherEnrollments[:startDate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0].enrollment).to respond_to(:startDate)
-      end
+      expect(course.teacherEnrollments[0].enrollment).to respond_to(:startDate)
     end
 
     it 'should has teacherEnrollments[:userID] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0].enrollment).to respond_to(:userID)
-      end
+      expect(course.teacherEnrollments[0].enrollment).to respond_to(:userID)
     end
 
     it 'should has teacherEnrollments[:lastUpdate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0].enrollment).to respond_to(:lastUpdate)
-      end
+      expect(course.teacherEnrollments[0].enrollment).to respond_to(:lastUpdate)
     end
 
     it 'should has teacherEnrollments[:role] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0].enrollment).to respond_to(:role)
-      end
+      expect(course.teacherEnrollments[0].enrollment).to respond_to(:role)
     end
 
     it 'should has teacherEnrollments[:endDate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.teacherEnrollments[0].enrollment).to respond_to(:endDate)
-      end
+      expect(course.teacherEnrollments[0].enrollment).to respond_to(:endDate)
     end
 
     it 'should has studentEnrollments key' do
-      VCR.use_cassette('courses') do
-        expect(course).to respond_to(:studentEnrollments)
-      end
+      expect(course).to respond_to(:studentEnrollments)
     end
 
     it 'should has studentEnrollments[:enrolment] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0]).to respond_to(:enrollment)
-      end
+      expect(course.studentEnrollments[0]).to respond_to(:enrollment)
     end
 
     it 'should has studentEnrollments should be Array' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments).to be_an_instance_of(Array)
-      end
+      expect(course.studentEnrollments).to be_an_instance_of(Array)
     end
 
     it 'should has studentEnrollments[:startDate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0].enrollment).to respond_to(:startDate)
-      end
+      expect(course.studentEnrollments[0].enrollment).to respond_to(:startDate)
     end
 
     it 'should has studentEnrollments[:userID] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0].enrollment).to respond_to(:userID)
-      end
+      expect(course.studentEnrollments[0].enrollment).to respond_to(:userID)
     end
 
     it 'should has studentEnrollments[:lastUpdate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0].enrollment).to respond_to(:lastUpdate)
-      end
+      expect(course.studentEnrollments[0].enrollment).to respond_to(:lastUpdate)
     end
 
     it 'should has studentEnrollments[:role] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0].enrollment).to respond_to(:role)
-      end
+      expect(course.studentEnrollments[0].enrollment).to respond_to(:role)
     end
 
     it 'should has studentEnrollments[:endDate] key' do
-      VCR.use_cassette('courses') do
-        expect(course.studentEnrollments[0].enrollment).to respond_to(:endDate)
-      end
+      expect(course.studentEnrollments[0].enrollment).to respond_to(:endDate)
     end
   end
 
@@ -175,353 +120,229 @@ describe Edelements::Api::Courses do
     let(:teachers){ Edelements.courses.teachers(edelements_course_id) }
 
     it "should return not empty array" do
-      VCR.use_cassette("teachers") do
-        expect(teachers.data).to_not be_nil
-      end
+      expect(teachers).to_not be_nil
     end
 
     it 'should be array' do
-      VCR.use_cassette("teachers") do
-        expect(teachers.data).to be_an_instance_of( Array )
-      end
+      expect(teachers).to be_an_instance_of( Array )
     end
 
     it 'should should be > 0' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data.length).to_not be_zero
-      end
+      expect(teachers.length).to_not be_zero
+    end
+
+    it 'should be Edelements::Teacher' do
+      expect(teachers[0]).to be_an_instance_of( Edelements::Teacher )
     end
 
     it 'should has id key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:id)
-      end
+      expect(teachers[0]).to respond_to(:id)
     end
 
     it 'should has schoolID key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:schoolID)
-      end
+      expect(teachers[0]).to respond_to(:schoolID)
     end
 
     it 'should has firstName key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:firstName)
-      end
+      expect(teachers[0]).to respond_to(:firstName)
     end
 
     it 'should has lastName key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:lastName)
-      end
+      expect(teachers[0]).to respond_to(:lastName)
     end
 
     it 'should has middleName key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:middleName)
-      end
+      expect(teachers[0]).to respond_to(:middleName)
     end
 
     it 'should has email key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:email)
-      end
+      expect(teachers[0]).to respond_to(:email)
     end
 
     it 'should has number key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:number)
-      end
+      expect(teachers[0]).to respond_to(:number)
     end
 
     it 'should has courseEnrollments key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:courseEnrollments)
-      end
+      expect(teachers[0]).to respond_to(:courseEnrollments)
     end
 
     it 'should has courseEnrollments[:enrolment] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0]).to respond_to(:enrollment)
-      end
+      expect(teachers[0].courseEnrollments[0]).to respond_to(:enrollment)
     end
 
     it 'should has courseEnrollments should be Array' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments).to be_an_instance_of(Array)
-      end
+      expect(teachers[0].courseEnrollments).to be_an_instance_of(Array)
     end
 
     it 'should has courseEnrollments[:startDate] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0].enrollment).to respond_to(:startDate)
-      end
+      expect(teachers[0].courseEnrollments[0].enrollment).to respond_to(:startDate)
     end
 
     it 'should has courseEnrollments[:courseID] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0].enrollment).to respond_to(:courseID)
-      end
+      expect(teachers[0].courseEnrollments[0].enrollment).to respond_to(:courseID)
     end
 
     it 'should has courseEnrollments[:lastUpdate] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0].enrollment).to respond_to(:lastUpdate)
-      end
+      expect(teachers[0].courseEnrollments[0].enrollment).to respond_to(:lastUpdate)
     end
 
     it 'should has courseEnrollments[:role] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0].enrollment).to respond_to(:role)
-      end
+      expect(teachers[0].courseEnrollments[0].enrollment).to respond_to(:role)
     end
 
     it 'should has courseEnrollments[:endDate] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.courseEnrollments[0].enrollment).to respond_to(:endDate)
-      end
+      expect(teachers[0].courseEnrollments[0].enrollment).to respond_to(:endDate)
     end
 
     it 'should has address key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:address)
-      end
+      expect(teachers[0]).to respond_to(:address)
     end
 
     it 'should has address[:street2] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.address).to respond_to(:street2)
-      end
+      expect(teachers[0].address).to respond_to(:street2)
     end
 
     it 'should has address[:street1] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.address).to respond_to(:street1)
-      end
+      expect(teachers[0].address).to respond_to(:street1)
     end
 
     it 'should has address[:zip] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.address).to respond_to(:zip)
-      end
+      expect(teachers[0].address).to respond_to(:zip)
     end
 
     it 'should has address[:state] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.address).to respond_to(:state)
-      end
+      expect(teachers[0].address).to respond_to(:state)
     end
 
     it 'should has address[:city] key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher.address).to respond_to(:city)
-      end
+      expect(teachers[0].address).to respond_to(:city)
     end
 
     it 'should has properties key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers.data[0].teacher).to respond_to(:properties)
-      end
+      expect(teachers[0]).to respond_to(:properties)
     end
 
-    it 'should has total key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers).to respond_to(:total)
-      end
-    end
-
-    it 'should has page key' do
-      VCR.use_cassette('teachers') do
-        expect(teachers).to respond_to(:page)
-      end
-    end
   end
 
   context '#students' do
     let(:students){ Edelements.courses.students( edelements_course_id ) }
 
     it "should return not empty array" do
-      VCR.use_cassette("students") do
-        expect(students.data).to_not be_nil
-      end
+      expect(students).to_not be_nil
     end
 
     it 'should be array' do
-      VCR.use_cassette("students") do
-        expect(students.data).to be_an_instance_of( Array )
-      end
+      expect(students).to be_an_instance_of( Array )
     end
 
     it 'should should be > 0' do
-      VCR.use_cassette('students') do
-        expect(students.data.length).to_not be_zero
-      end
+      expect(students.length).to_not be_zero
+    end
+
+    it 'should be Edelements::Student' do
+      expect(students[0]).to be_an_instance_of( Edelements::Student )
     end
 
     it 'should has id key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:id)
-      end
+      expect(students[0]).to respond_to(:id)
     end
 
     it 'should has schoolID key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:schoolID)
-      end
+      expect(students[0]).to respond_to(:schoolID)
     end
 
     it 'should has firstName key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:firstName)
-      end
+      expect(students[0]).to respond_to(:firstName)
     end
 
     it 'should has lastName key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:lastName)
-      end
+      expect(students[0]).to respond_to(:lastName)
     end
 
     it 'should has middleName key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:middleName)
-      end
+      expect(students[0]).to respond_to(:middleName)
     end
 
     it 'should has email key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:email)
-      end
+      expect(students[0]).to respond_to(:email)
     end
 
     it 'should has number key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:number)
-      end
+      expect(students[0]).to respond_to(:number)
     end
 
     it 'should has gradeLevel key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:gradeLevel)
-      end
+      expect(students[0]).to respond_to(:gradeLevel)
     end
 
     it 'should has address key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student).to respond_to(:address)
-      end
+      expect(students[0]).to respond_to(:address)
     end
 
     it 'should has address[:street2] key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student.address).to respond_to(:street2)
-      end
+      expect(students[0].address).to respond_to(:street2)
     end
 
     it 'should has address[:street1] key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student.address).to respond_to(:street1)
-      end
+      expect(students[0].address).to respond_to(:street1)
     end
 
     it 'should has address[:zip] key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student.address).to respond_to(:zip)
-      end
+      expect(students[0].address).to respond_to(:zip)
     end
 
     it 'should has address[:state] key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student.address).to respond_to(:state)
-      end
+      expect(students[0].address).to respond_to(:state)
     end
 
     it 'should has address[:city] key' do
-      VCR.use_cassette('students') do
-        expect(students.data[0].student.address).to respond_to(:city)
-      end
+      expect(students[0].address).to respond_to(:city)
     end
 
-    it 'should has total key' do
-      VCR.use_cassette('students') do
-        expect(students).to respond_to(:total)
-      end
-    end
-
-    it 'should has page key' do
-      VCR.use_cassette('students') do
-        expect(students).to respond_to(:page)
-      end
-    end
   end
 
   context '#events' do
     let(:events){ Edelements.courses.events( edelements_course_id ) }
 
     it "should return not empty array" do
-      VCR.use_cassette('events') do
-        expect(events.data).to_not be_nil
-      end
+      expect(events).to_not be_nil
     end
 
     it 'should be array' do
-      VCR.use_cassette("events") do
-        expect(events.data).to be_an_instance_of( Array )
-      end
+      expect(events).to be_an_instance_of( Array )
     end
 
     it 'should should be > 0' do
-      VCR.use_cassette('events') do
-        expect(events.data.length).to_not be_zero
-      end
+      expect(events.length).to_not be_zero
     end
 
+    it 'should be Edelements::Event' do
+         expect(events[0]).to be_an_instance_of( Edelements::Event )
+       end
+
     it 'should has id key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events).to respond_to(:id)
-      end
+      expect(events[0]).to respond_to(:id)
     end
 
     it 'should has timestamp key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events).to respond_to(:timestamp)
-      end
+      expect(events[0]).to respond_to(:timestamp)
     end
 
     it 'should has eventtype key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events).to respond_to(:eventtype)
-      end
+      expect(events[0]).to respond_to(:eventtype)
     end
 
     it 'should has eventaction key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events).to respond_to(:eventaction)
-      end
+      expect(events[0]).to respond_to(:eventaction)
     end
 
     it 'should has params key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events).to respond_to(:params)
-      end
+      expect(events[0]).to respond_to(:params)
     end
 
     it 'should params[:courseID] key' do
-      VCR.use_cassette('events') do
-        expect(events.data[0].events.params).to respond_to(:courseID)
-      end
-    end
-
-    it 'should has page key' do
-      VCR.use_cassette('events') do
-        expect(events).to respond_to(:page)
-      end
-    end
-
-    it 'should has page key' do
-      VCR.use_cassette('events') do
-        expect(events).to respond_to(:total)
-      end
+      expect(events[0].params).to respond_to(:courseID)
     end
   end
 end
