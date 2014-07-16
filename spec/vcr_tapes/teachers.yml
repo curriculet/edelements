@@ -343,4 +343,123 @@ http_interactions:
         size="1" noshade="noshade"><h3>Apache Tomcat/7.0.32</h3></body></html>'
     http_version: 
   recorded_at: Wed, 16 Jul 2014 11:03:13 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=e91ee1a7-f15f-475e-a07a-2675409f48f1; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 15-Jul-2014 19:35:14
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 16 Jul 2014 19:35:14 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":2,"data":[{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"e61eafb3-2c4a-4d19-965f-8369bc151a25","firstName":"Curriculet","lastName":"StudentThree","middleName":"Test","email":"","number":"curriculet.teststudent3","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}},{"student":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"427b77d7-cf71-47ce-9aaa-f2d8e1ecdd4c","firstName":"Curriculet","lastName":"StudentFour","middleName":"Test","email":"","number":"curriculet.teststudent4","address":{"street2":"","zip":"","street1":"","state":"","city":""},"properties":{},"lastUpdate":"1386145901623","gradeLevel":7}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 19:35:15 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/courses.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=e63773dd-8fa5-46fa-bc6b-aca2d95ba3a1; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 15-Jul-2014 19:35:15
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 16 Jul 2014 19:35:14 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":1,"data":[{"course":{"schoolID":"6ec15b8a-5226-11e3-af88-12313d151e4b","id":"8bcc2d23-bdf8-4a3d-accf-b780c14afb5f","name":"Curriculet
+        Test Class 2","schoolYear":"2013-2014","properties":{"End Date":"Mon Jun 30
+        00:00:00 UTC 2014","Start Date":"Mon Jul 01 00:00:00 UTC 2013"},"lastUpdate":"1398451262149"}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 19:35:15 GMT
+- request:
+    method: get
+    uri: http://<API_KEY>:@johnson-test-1.edelements.com/v1_0/teachers/a6fb900f-495e-4b35-880f-bc582c850f6b/events.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Edelements API Ruby Gem by Curriculet
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=84ee7fe0-1d1d-472f-8945-8cc13bca8443; Path=/; HttpOnly
+      - rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 15-Jul-2014 19:35:15
+        GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Language:
+      - en-US
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 16 Jul 2014 19:35:15 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"total":1,"data":[{"events":{"id":"b0ad9ff0-2096-49f9-b399-612c2283b138","timestamp":1398451341334,"eventtype":"TEACHER","eventaction":"CREATE","params":{"userID":"a6fb900f-495e-4b35-880f-bc582c850f6b"}}}],"page":"1"}'
+    http_version: 
+  recorded_at: Wed, 16 Jul 2014 19:35:16 GMT
 recorded_with: VCR 2.9.2
