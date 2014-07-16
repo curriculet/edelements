@@ -151,7 +151,7 @@ module Edelements
 
       def students id
         response = @client.get( "#{ api_model.api_path }/#{ id }/students" )
-        Edelements::School.parse(response.body)
+        Edelements::Student.parse(response.body)
       end
 
       # courses
